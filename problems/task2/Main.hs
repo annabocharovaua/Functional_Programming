@@ -1,4 +1,3 @@
--- Import necessary modules
 import Numeric
 import Numeric.LinearAlgebra (reshape, randn, size)
 import Numeric.LinearAlgebra.Data 
