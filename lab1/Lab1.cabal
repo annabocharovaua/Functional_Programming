@@ -1,0 +1,93 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           Lab1
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/lab1#readme>
+homepage:       https://github.com/githubuser/lab1#readme
+bug-reports:    https://github.com/githubuser/lab1/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2021 Author name here
+license:        BSD3
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/lab1
+
+library
+  exposed-modules:
+      AuthorsTable
+      AuthorsToResources
+      Converter
+      MySQLConnector
+      ResourcesTable
+      UserInteraction
+      UsersTable
+      UsersToResources
+  other-modules:
+      Paths_Lab1
+  hs-source-dirs:
+      src
+  build-depends:
+      QuickCheck
+    , base
+    , binary
+    , bytestring
+    , haskeline
+    , io-streams
+    , mysql-haskell
+    , pretty
+    , text
+    , time
+    , utf8-string
+  default-language: Haskell2010
+
+executable Lab1-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_Lab1
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Lab1
+    , QuickCheck
+    , base
+    , binary
+    , bytestring
+    , haskeline
+    , io-streams
+    , mysql-haskell
+    , pretty
+    , text
+    , time
+    , utf8-string
+  default-language: Haskell2010
+
+test-suite Lab1-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_Lab1
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      Lab1
+    , QuickCheck
+    , base
+    , binary
+    , bytestring
+    , haskeline
+    , io-streams
+    , mysql-haskell
+    , pretty
+    , text
+    , time
+    , utf8-string
+  default-language: Haskell2010
