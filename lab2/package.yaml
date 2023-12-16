@@ -2,9 +2,9 @@ name:                lab2
 version:             0.1.0.0
 github:              "Github username here/lab2"
 license:             BSD3
-author:              "Author name here"
+author:              "Anna Bocharova"
 maintainer:          "Author email here"
-copyright:           "2019 Author name here"
+copyright:           "2023 Author name here"
 
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
